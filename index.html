@@ -14,12 +14,12 @@
 
     <div class="grid grid-cols-3 h-screen w-full">
         <div id="bg" class="relative">
-            <div class="flex items-center justify-center bg-slate-800 bg-opacity-40 py-4 top-[25%] relative">
+            <div class="flex items-center justify-center bg-slate-800 bg-opacity-40 px-2 py-4 top-[25%] relative">
                 <img src="odin-lined.png" class="h-32">
-                <h2 class="text-6xl font-bold text-[color:var(--light-color)] ml-4">CARS</h2>
+                <h2 class="text-6xl font-bold text-[color:var(--light-color)] ml-4">CAR RENTAL</h2>
             </div>
             <div class="absolute bottom-4 flex justify-center w-full">
-                <h6 class="text-[color:var(--light-color)] font-light">Photo by <a
+                <h6 class="px-2 text-[color:var(--light-color)] font-light">Photo by <a
                         href="https://unsplash.com/@huntleytography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                         class="font-medium underline">Devon
                         Janse van Rensburg</a> on <a
@@ -29,7 +29,8 @@
             </div>
         </div>
         <div class="col-span-2 flex flex-col justify-center py-16">
-            <h4 class="font-medium text-3xl text-[color:var(--dark-color)] mb-6 px-16">This is not a real online
+            <h4 class="font-medium text-3xl text-[color:var(--dark-color)] mb-6 px-16 seeYouLater">This is not a real
+                online
                 service! You
                 know
                 you need something like this in
@@ -37,11 +38,12 @@
                 life to help you
                 realize your deepest dreams. Sign up <em>now</em> to get started.</h4>
 
-            <h4 class="font-medium text-3xl text-[color:var(--dark-color)] mb-12 px-16">You <em>know</em> you want to.
+            <h4 class="font-medium text-3xl text-[color:var(--dark-color)] mb-12 px-16 seeYouLater">You <em>know</em>
+                you want to.
             </h4>
-            <form class="px-16 pb-8 pt-4 bg-[color:var(--light-accent)] mb-12 shadow-xl" id="regForm">
+            <form class="px-16 py-8 bg-[color:var(--light-accent)] mb-12 shadow-xl seeYouLater" id="regForm">
 
-                <h4 class="font-medium text-3xl text-[color:var(--dark-color)] mb-8">Let's do this!</h4>
+                <h4 class="font-bold text-3xl text-[color:var(--dark-color)] mb-8">Let's do this!</h4>
 
                 <fieldset class="mb-4">
                     <div><label for="first-name">First name</label>
@@ -74,24 +76,36 @@
 
                 <fieldset>
                     <div><label for="pass-1">Password</label>
-                        <input type="password" name="pass-1" id="pass-1"
+                        <input type="password" name="pass-1" id="pass-1" placeholder="********" minlength="8"
                             class="font-bold rounded border border-slate-800 border-opacity-20 bg-black bg-opacity-5 p-1 text-xl"
                             required>
+                        <h6 class="invalidPassword text-[color:var(--main-color)] text-sm pt-0.5 opacity-0">* Passwords
+                            don't
+                            match.
+                        </h6>
                     </div>
 
                     <div><label for="pass-2">Confirm password</label>
-                        <input type="password" name="pass-2" id="pass-2"
+                        <input type="password" name="pass-2" id="pass-2" placeholder="********" minlength="8"
                             class="font-bold rounded border border-slate-800 border-opacity-20 bg-black bg-opacity-5 p-1 text-xl"
                             required>
+                        <h6 class="invalidPassword text-[color:var(--main-color)] text-sm pt-0.5 opacity-0">* Passwords
+                            don't
+                            match.
+                        </h6>
                     </div>
                 </fieldset>
 
             </form>
             <button type="submit" form="regForm"
-                class="bg-[color:var(--main-color)] text-[color:var(--light-color)] ml-16 px-12 py-4 w-fit text-2xl font-bold shadow-2xl rounded-xl mb-8">Create
+                class="bg-[color:var(--main-color)] text-[color:var(--light-color)] ml-16 px-12 py-4 w-fit text-2xl font-bold shadow-2xl rounded-xl mb-8 seeYouLater">Create
                 Account</button>
-            <h5 class="font-normal text-[color:var(--dark-color)] text-xl px-16">Already have an account? <a href="#"
-                    class="text-[color:var(--main-color)] font-medium">Log in</a></h5>
+            <h5 class="font-normal text-[color:var(--dark-color)] text-xl px-16 seeYouLater">Already have an account? <a
+                    href="#" class="text-[color:var(--main-color)] font-medium">Log in</a></h5>
+
+            <h4 class="hidden opacity-0 font-medium text-4xl text-[color:var(--main-color)] text-center my-20 px-16"
+                id="driveSafe">
+            </h4>
         </div>
     </div>
 

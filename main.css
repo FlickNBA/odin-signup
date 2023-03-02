@@ -41,6 +41,19 @@ fieldset > div:first-child {
     margin-right: 6rem;
 }
 
-input:invalid {
-    border: 5px solid red !important;
+input {
+    border: 2px solid transparent;
+}
+
+input:not(:placeholder-shown):invalid, input.invalid {
+    border: 2px solid var(--main-color);
+    transition: all 500ms;
+}
+
+.invalidPassword {
+    transition: all 500ms;
+}
+
+.seeYouLater, #driveSafe {
+    transition: all 1s;
 }
